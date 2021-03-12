@@ -1,30 +1,28 @@
 #include <iostream>
 using namespace std;
+
+enum{
+    board_wide = 8,
+    board_length = 8
+};
+
+enum{
+    pawnw = 'P', empty = ' ', rookw = 'R', knightw = 'N', bishopw = 'B', queenw = 'Q', kingw = 'K',
+    pawnb = 'p', rookb = 'r', knightb = 'n', bishopb = 'b', queenb = 'q', kingb = 'k'
+};
+
 int main()
 {
-char matr[8][8];
-char pawnw = 'P';
-char empty = ' ';
-char rookw = 'R';
-char knightw = 'N';
-char bishopw = 'B';
-char queenw = 'Q';
-char kingw = 'K';
-char pawnb = 'p';
-char rookb = 'r';
-char knightb = 'n';
-char bishopb = 'b';
-char queenb = 'q';
-char kingb = 'k';
-for(int i=0; i<8; i++)
-{
-  for(int j=0; j<8; j++)
-  {
-    if(i < 2) matr[i][j] = pawnw;
-    if(i > 5) matr[i][j] = pawnb;
-    if(i > 1 && i < 6) matr[i][j] = empty;
-  }
-}
+    char matr[board_wide][board_length];
+    for(int i=0; i<8; i++)
+    {
+        for(int j=0; j<8; j++)
+        {
+            if(i < 2) matr[i][j] = pawnw;
+            if(i > 5) matr[i][j] = pawnb;
+            if(i > 1 && i < 6) matr[i][j] = empty;
+        }
+    }
     matr[0][0] = rookw;
     matr[0][1] = knightw;
     matr[0][2] = bishopw;
@@ -42,15 +40,15 @@ for(int i=0; i<8; i++)
     matr[7][6] = knightb;
     matr[7][7] = rookb;
 
-for(int i=0; i<8; i++)
-{
-  cout<< "|";
-  for(int j=0; j<8; j++)
-  {
-    cout << matr[i][j] << "|";
-  }
-  cout << "\n";
-}
-system("PAUSE");
-return 0;
+    for(int i=0; i<8; i++)
+    {
+        cout<< "|";
+        for(int j=0; j<8; j++)
+        {
+            cout << matr[i][j] << "|";
+        }
+        cout << "\n";
+    }
+    system("PAUSE");
+    return 0;
 }
