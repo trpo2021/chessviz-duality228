@@ -33,7 +33,7 @@ povtr:
             x = 5;
             break;
         } else {
-            x = pawn(b, 8, 8, a, 6, hod);
+            x = pawn(b, 8, 8, a, 6);
             break;
         }
     }
@@ -43,7 +43,7 @@ povtr:
             x = 5;
             break;
         } else {
-            x = rook(b, 8, 8, a, 6, hod);
+            x = rook(b, 8, 8, a, 6);
             break;
         }
     }

@@ -1,5 +1,5 @@
 #include "board.h"
-int Pawn(char* ptr[], int n, int m, char a[], int p, int hod)
+int Pawn(char* ptr[], int n, int m, char a[])
 {
     char place;
     int top1 = a[2] - 48, top2 = a[5] - 48, top3 = a[1] - 97, top4 = a[4] - 97;
@@ -74,7 +74,7 @@ int Pawn(char* ptr[], int n, int m, char a[], int p, int hod)
     cout << " Neverniy hod!!! " << endl;
     return 5;
 }
-int pawn(char* ptr[], int n, int m, char a[], int p, int hod)
+int pawn(char* ptr[], int n, int m, char a[])
 {
     char place;
     int top1 = a[2] - 48, top2 = a[5] - 48, top3 = a[1] - 97, top4 = a[4] - 97;
@@ -154,7 +154,7 @@ int pawn(char* ptr[], int n, int m, char a[], int p, int hod)
     return 5;
 }
 
-int king(char* ptr[], int n, int m, char a[], int p, int hod)
+int king(char* ptr[], int n, int m, char a[], int hod)
 {
     char place;
     int top1 = a[2] - 48, top2 = a[5] - 48, top3 = a[1] - 97, top4 = a[4] - 97;
@@ -212,7 +212,7 @@ int king(char* ptr[], int n, int m, char a[], int p, int hod)
     return 0;
 }
 
-int queen(char* ptr[], int n, int m, char a[], int p, int hod)
+int queen(char* ptr[], int n, int m, char a[], int hod)
 {
     char place;
     int top1 = a[2] - 48, top2 = a[5] - 48, top3 = a[1] - 97, top4 = a[4] - 97,
@@ -603,7 +603,7 @@ int queen(char* ptr[], int n, int m, char a[], int p, int hod)
     return 5;
 }
 
-int bishop(char* ptr[], int n, int m, char a[], int p, int hod)
+int bishop(char* ptr[], int n, int m, char a[], int hod)
 {
     char place;
     int top1 = a[2] - 48, top2 = a[5] - 48, top3 = a[1] - 97, top4 = a[4] - 97,
@@ -799,7 +799,7 @@ int bishop(char* ptr[], int n, int m, char a[], int p, int hod)
     return 5;
 }
 
-int rook(char* ptr[], int n, int m, char a[], int p, int hod)
+int rook(char* ptr[], int n, int m, char a[], int hod)
 {
     char place;
     int top1 = a[2] - 48, top2 = a[5] - 48, top3 = a[1] - 97, top4 = a[4] - 97;
@@ -1023,7 +1023,7 @@ int rook(char* ptr[], int n, int m, char a[], int p, int hod)
     return 0;
 }
 
-int kNight(char* ptr[], int n, int m, char a[], int p, int hod)
+int kNight(char* ptr[], int n, int m, char a[], int hod)
 {
     char place;
     int top1 = a[2] - 48, top2 = a[5] - 48, top3 = a[1] - 97, top4 = a[4] - 97,
