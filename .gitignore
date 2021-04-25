@@ -1,5 +1,3 @@
+*.swp
 *.o
-*.html
-chessviz
-makefile~
-output
+*.exe
