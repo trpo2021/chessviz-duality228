@@ -12,5 +12,5 @@ int rook(char* ptr[], int n, int m, char* a, int hod);
 int queen(char* ptr[], int n, int m, char* a, int hod);
 int kNight(char* ptr[], int n, int m, char a[], int hod);
 int bishop(char* ptr[], int n, int m, char a[], int hod);
-int king(char* ptr[], int n, int m, char a[],  int hod);
+int king(char* ptr[], int n, int m, char a[], int hod);
 #endif
