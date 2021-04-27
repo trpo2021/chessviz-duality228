@@ -29,11 +29,10 @@ bin/test: build/test.o
 build/test.o: test/test.cpp 
 	g++ -Wall -Werror -c test/test.cpp -o build/test.o -Ithirdparty
 
+-include board.d
+
 clean:
 	rm build/*.o
 	rm bin/*.exe
 	rm -R build
 	rm -R bin
-
-
-
