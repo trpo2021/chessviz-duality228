@@ -24,7 +24,7 @@ build/board.o: src/board.cpp src/board.h
 	$(OBJ)
 
 bin/test.exe: build/test.o
-	g++ -Wall -Werror build/test.o -o bin/test
+	g++ -Wall -Werror build/test.o -o bin/test.exe
 
 build/test.o: test/test.cpp 
 	g++ -Wall -Werror -c test/test.cpp -o build/test.o -I thirdparty
