@@ -3,7 +3,7 @@ OBJ = g++ $(CFLAGS) -c $< -o $@
 
 .PHONY: clean
 
-all:folder folder2 bin/chess.exe bin/test
+all:folder folder2 bin/chess.exe bin/test.exe
 
 folder:
 	mkdir -p build 
