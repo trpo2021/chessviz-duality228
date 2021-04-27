@@ -33,7 +33,7 @@ povtr:
             x = 5;
             break;
         } else {
-            x = pawn(b, 8, 8, a, 6);
+            x = pawn(b, 8, 8, a);
             break;
         }
     }
@@ -43,7 +43,7 @@ povtr:
             x = 5;
             break;
         } else {
-            x = rook(b, 8, 8, a, 6);
+            x = rook(b, 8, 8, a, hod);
             break;
         }
     }
@@ -53,7 +53,7 @@ povtr:
             x = 5;
             break;
         } else {
-            x = bishop(b, 8, 8, a, 6, hod);
+            x = bishop(b, 8, 8, a, 6);
             break;
         }
     }
@@ -63,7 +63,7 @@ povtr:
             x = 5;
             break;
         } else {
-            x = king(b, 8, 8, a, 6, hod);
+            x = king(b, 8, 8, a, 6);
             break;
         }
     }
@@ -73,7 +73,7 @@ povtr:
             x = 5;
             break;
         } else {
-            x = kNight(b, 8, 8, a, 6, hod);
+            x = kNight(b, 8, 8, a, 6);
             break;
         }
     }
@@ -83,7 +83,7 @@ povtr:
             x = 5;
             break;
         } else {
-            x = queen(b, 8, 8, a, 6, hod);
+            x = queen(b, 8, 8, a, hod);
             break;
         }
     }
@@ -93,7 +93,7 @@ povtr:
             x = 5;
             break;
         } else {
-            x = Pawn(b, 8, 8, a, 6, hod);
+            x = Pawn(b, 8, 8, a);
             break;
         }
     }
@@ -103,7 +103,7 @@ povtr:
             x = 5;
             break;
         } else {
-            x = rook(b, 8, 8, a, 6, hod);
+            x = rook(b, 8, 8, a, hod);
             break;
         }
     }
@@ -113,7 +113,7 @@ povtr:
             x = 5;
             break;
         } else {
-            x = bishop(b, 8, 8, a, 6, hod);
+            x = bishop(b, 8, 8, a, 6);
             break;
         }
     }
@@ -123,7 +123,7 @@ povtr:
             x = 5;
             break;
         } else {
-            x = king(b, 8, 8, a, 6, hod);
+            x = king(b, 8, 8, a, 6);
             break;
         }
     }
@@ -133,7 +133,7 @@ povtr:
             x = 5;
             break;
         } else {
-            x = kNight(b, 8, 8, a, 6, hod);
+            x = kNight(b, 8, 8, a, 6);
             break;
         }
     }
@@ -143,7 +143,7 @@ povtr:
             x = 5;
             break;
         } else {
-            x = queen(b, 8, 8, a, 6, hod);
+            x = queen(b, 8, 8, a, hod);
             break;
         }
     }
