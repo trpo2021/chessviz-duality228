@@ -23,7 +23,7 @@ build/board_print_plain.o: src/board_print_plain.cpp src/board.h
 build/board.o: src/board.cpp src/board.h
 	$(OBJ)
 
-bin/test: build/test.o
+bin/test.exe: build/test.o
 	g++ -Wall -Werror build/test.o -o bin/test
 
 build/test.o: test/test.cpp 
