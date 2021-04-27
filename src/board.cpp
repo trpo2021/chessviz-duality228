@@ -212,7 +212,7 @@ int king(char* ptr[], int n, int m, char a[], int hod)
     return 0;
 }
 
-int queen(char* ptr[], int n, int m, char a[], int hod)
+int queen(char* ptr[], int n, int m, char* a, int hod)
 {
     char place;
     int top1 = a[2] - 48, top2 = a[5] - 48, top3 = a[1] - 97, top4 = a[4] - 97,
@@ -799,7 +799,7 @@ int bishop(char* ptr[], int n, int m, char a[], int hod)
     return 5;
 }
 
-int rook(char* ptr[], int n, int m, char a[], int hod)
+int rook(char* ptr[], int n, int m, char* a, int hod)
 {
     char place;
     int top1 = a[2] - 48, top2 = a[5] - 48, top3 = a[1] - 97, top4 = a[4] - 97;
