@@ -24,7 +24,7 @@ build/board.o: src/board.cpp src/board.h
 	$(OBJ)
 	
 build/board.a: build/board.o
-	ar rcs $^ $@
+	ar rcs build/board.a  build/board.o
 
 bin/test.exe: build/test.o
 	g++ -Wall -Werror build/test.o -o bin/test.exe
