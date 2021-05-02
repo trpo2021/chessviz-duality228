@@ -13,7 +13,7 @@ int main()
     for (int i = 0; i < 8; i++)
         b[i] = board[i];
     Board(b, 8, 8);
-next:
+while (x! == 4) {
     system("clear");
     pBoard(b, 8, 8);
     if (hod % 2 != 0) {
@@ -23,7 +23,7 @@ next:
         cout << endl << " Time Of Black " << endl;
         hod++;
     }
-povtr:
+while (x! == 5){
     for (int i = 0; i < 6; i++)
         cin >> a[i];
     switch (a[0]) {
@@ -148,10 +148,8 @@ povtr:
         }
     }
     }
-    if (x == 5)
-        goto povtr;
-    if (x == 4)
-        goto next;
+}
+}
 
     cout << endl;
     return 0;
