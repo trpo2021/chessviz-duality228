@@ -11,7 +11,7 @@ folder:
 folder2:
 	mkdir -p bin 
 
-bin/chess.exe: build/main.o build/board_print_plain.o build/board.o 
+bin/chess.exe: build/main.o build/board_print_plain.o build/board.a 
 	g++ $(CFLAGS) $^ -o $@
 
 build/main.o: src/main.cpp src/board.h 
@@ -22,6 +22,9 @@ build/board_print_plain.o: src/board_print_plain.cpp src/board.h
 
 build/board.o: src/board.cpp src/board.h
 	$(OBJ)
+	
+build/board.a: build/board.o
+	ar rcs $^ $@
 
 bin/test.exe: build/test.o
 	g++ -Wall -Werror build/test.o -o bin/test.exe
