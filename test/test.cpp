@@ -1,7 +1,7 @@
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
 #include <iostream>
-#include "board.h"
+#include "../src/board.h"
 using namespace std;
 
 
