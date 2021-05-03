@@ -1,8 +1,6 @@
 CFLAGS = -Wall -Werror 
 OBJ = g++ $(CFLAGS) -c $< -o $@
 
-.PHONY: clean
-
 all:folder folder2 bin/chess.exe bin/test.exe
 
 folder:
@@ -11,6 +9,7 @@ folder:
 folder2:
 	mkdir -p bin 
 
+.PHONY: chessiz
 bin/chess.exe: build/main.o build/board_print_plain.o build/board.a 
 	g++ $(CFLAGS) $^ -o $@
 
@@ -26,12 +25,15 @@ build/board.o: src/board.cpp src/board.h
 build/board.a: build/board.o
 	ar rcs build/board.a  build/board.o
 
+.PHONY: test
 bin/test.exe: build/test.o build/board.a build/board_print_plain.o
 	g++ -Wall -Werror -o build/test.o build/board_print_plain.o build/board.a 
 build/test.o: test/test.cpp src/board.h
 	g++ -Wall -Werror -c test/test.cpp src/board.h -o build/test.o -I thirdparty
 
 -include board.d board_print_plain.d test.d
+
+.PHONY: clean
 
 clean:
 	rm build/*.o
