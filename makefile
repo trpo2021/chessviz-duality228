@@ -32,7 +32,7 @@ bin/test.exe: build/test.o build/board.a build/board_print_plain.o
 build/test.o: test/test.cpp src/board.h
 	g++ -Wall -Werror -c test/test.cpp src/board.h -o build/test.o -I thirdparty
 
--include board.d
+-include board.d board_print_plain.d test.d
 
 clean:
 	rm build/*.o
