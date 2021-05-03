@@ -22,70 +22,70 @@ TEST_CASE("Testing for Chess Pawn ", "[Chess]")
     a[5] = '4';
     cout << " Testing Pawn" << endl;
     cout << "Test 1   -   Okey" << endl;
-    REQUIRE(pawn(b, 8, 8, a, 6, hod) == 4); // hod na 2 kletki iz nachala
+    REQUIRE(pawn(b, 8, 8, a) == 4); // hod na 2 kletki iz nachala
     a[1] = 'b';
     a[2] = '2';
     a[3] = '-';
     a[4] = 'b';
     a[5] = '3';
     cout << "Test 2   -   Okey" << endl;
-    REQUIRE(pawn(b, 8, 8, a, 6, hod) == 4); // hod na 1 kletku
+    REQUIRE(pawn(b, 8, 8, a) == 4); // hod na 1 kletku
     a[1] = 'b';
     a[2] = '2';
     a[3] = '-';
     a[4] = 'a';
     a[5] = '3';
     cout << "Test 3   -   Okey" << endl;
-    REQUIRE(pawn(b, 8, 8, a, 6, hod) == 5); // proverka hoda po diagonali
+    REQUIRE(pawn(b, 8, 8, a) == 5); // proverka hoda po diagonali
     a[1] = 'b';
     a[2] = '2';
     a[3] = '-';
     a[4] = 'a';
     a[5] = '3';
     cout << "Test 4   -   Okey" << endl;
-    REQUIRE(pawn(b, 8, 8, a, 6, hod) == 5); // proverka hoda po diagonali
+    REQUIRE(pawn(b, 8, 8, a) == 5); // proverka hoda po diagonali
     a[1] = 'b';
     a[2] = '2';
     a[3] = '-';
     a[4] = 'b';
     a[5] = '5';
     cout << "Test 5   -   Okey" << endl;
-    REQUIRE(pawn(b, 8, 8, a, 6, hod) == 5); // proverka hoda na 3 kletki
+    REQUIRE(pawn(b, 8, 8, a) == 5); // proverka hoda na 3 kletki
     a[1] = 'a';
     a[2] = '2';
     a[3] = '-';
     a[4] = 'a';
     a[5] = '4';
     cout << "Test 6   -   Okey" << endl;
-    REQUIRE(pawn(b, 8, 8, a, 6, hod) == 5); // proverka hoda esli vperedi figura
+    REQUIRE(pawn(b, 8, 8, a) == 5); // proverka hoda esli vperedi figura
     a[1] = 'a';
     a[2] = '2';
     a[3] = '-';
     a[4] = 'a';
     a[5] = '1';
     cout << "Test 7   -   Okey" << endl;
-    REQUIRE(pawn(b, 8, 8, a, 6, hod) == 5); // proverka hoda nazad
+    REQUIRE(pawn(b, 8, 8, a) == 5); // proverka hoda nazad
     a[1] = 'c';
     a[2] = '2';
     a[3] = 'x';
     a[4] = 'd';
     a[5] = '3';
     cout << "Test 8   -   Okey" << endl;
-    REQUIRE(pawn(b, 8, 8, a, 6, hod) == 4); // proverka s'edaniya figuri
+    REQUIRE(pawn(b, 8, 8, a) == 4); // proverka s'edaniya figuri
     a[1] = 'e';
     a[2] = '2';
     a[3] = 'x';
     a[4] = 'd';
     a[5] = '3';
     cout << "Test 9   -   Okey" << endl;
-    REQUIRE(pawn(b, 8, 8, a, 6, hod) == 4); // proverka s'edaniya figuri
+    REQUIRE(pawn(b, 8, 8, a) == 4); // proverka s'edaniya figuri
     a[1] = 'd';
     a[2] = '2';
     a[3] = 'x';
     a[4] = 'd';
     a[5] = '3';
     cout << "Test 10  -   Okey" << endl;
-    REQUIRE(pawn(b, 8, 8, a, 6, hod) == 5); // proverka s'edaniya figuri
+    REQUIRE(pawn(b, 8, 8, a) == 5); // proverka s'edaniya figuri
 }
 
 TEST_CASE("Testing for Chess Knight ", "[Chess]")
