@@ -29,7 +29,7 @@ build/board.a: build/board.o
 bin/test.exe: build/test.o build/board.a build/board_print_plain.o
 	g++ -Wall -Werror -Wextra -I src -I thirdparty -o $@ $^
 build/test.o: test/test.cpp src/board.h
-	g++ -Wall -Werror -c test/test.cpp src/board.h -o build/test.o -I thirdparty
+	g++ -c -Wall -Werror -Wextra -I src -I thirdparty -o $@ $<
 
 -include board.d board_print_plain.d test.d
 
