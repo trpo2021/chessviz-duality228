@@ -10,6 +10,7 @@ folder2:
 	mkdir -p bin 
 
 .PHONY: chessiz
+chessviz: bin/chessviz.exe
 bin/chess.exe: build/main.o build/board_print_plain.o build/board.a 
 	g++ $(CFLAGS) $^ -o $@
 
@@ -26,6 +27,7 @@ build/board.a: build/board.o
 	ar rcs build/board.a  build/board.o
 
 .PHONY: test
+test: bin/test.exe
 bin/test.exe: build/test.o build/board.a build/board_print_plain.o
 	g++ -Wall -Werror -Wextra -I src -I thirdparty -o $@ $^
 build/test.o: test/test.cpp
