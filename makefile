@@ -13,13 +13,13 @@ folder2:
 bin/chess.exe: build/main.o build/board_print_plain.o build/board.a 
 	g++ $(CFLAGS) $^ -o $@
 
-build/main.o: src/main.cpp src/board.h 
+build/main.o: src/main.cpp
 	$(OBJ)
 
-build/board_print_plain.o: src/board_print_plain.cpp src/board.h
+build/board_print_plain.o: src/board_print_plain.cpp
 	$(OBJ)
 
-build/board.o: src/board.cpp src/board.h
+build/board.o: src/board.cpp
 	$(OBJ)
 	
 build/board.a: build/board.o
@@ -28,7 +28,7 @@ build/board.a: build/board.o
 .PHONY: test
 bin/test.exe: build/test.o build/board.a build/board_print_plain.o
 	g++ -Wall -Werror -Wextra -I src -I thirdparty -o $@ $^
-build/test.o: test/test.cpp src/board.h
+build/test.o: test/test.cpp
 	g++ -c -Wall -Werror -Wextra -I src -I thirdparty -o $@ $<
 
 -include board.d board_print_plain.d test.d
