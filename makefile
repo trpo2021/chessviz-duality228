@@ -27,7 +27,7 @@ build/board.a: build/board.o
 	ar rcs build/board.a  build/board.o
 
 bin/test.exe: build/test.o build/board.a build/board_print_plain.o
-	g++ -Wall -Werror -o build/test.o build/board_print_plain.o build/board.a
+	g++ -Wall -Werror -o build/test.o build/board_print_plain.o build/board.a bin/test.exe
 
 build/test.o: test/test.cpp src/board.h
 	g++ -Wall -Werror -c test/test.cpp src/board.h -o build/test.o -I thirdparty
