@@ -1,9 +1,8 @@
 #define CATCH_CONFIG_MAIN
+#include "../src/board.h"
 #include "catch.hpp"
 #include <iostream>
-#include "../src/board.h"
 using namespace std;
-
 
 TEST_CASE("Testing for Chess Pawn ", "[Chess]")
 {
