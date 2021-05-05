@@ -344,33 +344,33 @@ TEST_CASE("Testing for Chess Rook ", "[Chess]")
     a[5] = '1';
     cout << "Testing Rook" << endl;
     cout << "Test 1   -   Okey" << endl;
-    REQUIRE(rook(b, 8, 8, a, hod) == 5); // proverka hoda po vertikali
+    REQUIRE(rook(b, 8, 8, a, hod) == 4); // proverka hoda po vertikali
     a[1] = 'c';
     a[2] = '4';
     a[3] = '-';
     a[4] = 'a';
     a[5] = '4';
     cout << "Test 2   -   Okey" << endl;
-    REQUIRE(rook(b, 8, 8, a, hod) == 5); // proverka hoda po gorizontali
+    REQUIRE(rook(b, 8, 8, a, hod) == 4); // proverka hoda po gorizontali
     a[1] = 'c';
     a[2] = '4';
     a[3] = '-';
     a[4] = 'g';
     a[5] = '4';
     cout << "Test 3   -   Okey" << endl;
-    REQUIRE(rook(b, 8, 8, a, hod) == 5); // proverka hoda cherez figuru
+    REQUIRE(rook(b, 8, 8, a, hod) == 4); // proverka hoda cherez figuru
     a[1] = 'c';
     a[2] = '4';
     a[3] = '-';
     a[4] = 'f';
     a[5] = '7';
     cout << "Test 4   -   Okey" << endl;
-    REQUIRE(rook(b, 8, 8, a, hod) == 5); // proverka hoda po diagonali
+    REQUIRE(rook(b, 8, 8, a, hod) == 4); // proverka hoda po diagonali
     a[1] = 'c';
     a[2] = '4';
     a[3] = 'x';
     a[4] = 'e';
     a[5] = '4';
     cout << "Test 5   -   Okey" << endl;
-    REQUIRE(rook(b, 8, 8, a, hod) == 5); // proverka s'edaniya
+    REQUIRE(rook(b, 8, 8, a, hod) == 4); // proverka s'edaniya
 }
