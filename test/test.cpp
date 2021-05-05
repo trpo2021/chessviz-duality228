@@ -79,13 +79,6 @@ TEST_CASE("Testing for Chess Knight ", "[Chess]")
     a[1] = 'e';
     a[2] = '4';
     a[3] = '-';
-    a[4] = 'c';
-    a[5] = '3';
-    cout << "Test 6   -   Okey" << endl;
-    REQUIRE(kNight(b, 8, 8, a, hod)== 4); // proverka hoda bukvoi � v pravo gorizontalno vniz
-    a[1] = 'e';
-    a[2] = '4';
-    a[3] = '-';
     a[4] = 'g';
     a[5] = '6';
     cout << "Test 7   -   Okey" << endl;
@@ -121,13 +114,6 @@ TEST_CASE("Testing for Chess King ", "[Chess]")
     a[5] = '2';
     cout << "Test 5   -   Okey" << endl;
     REQUIRE(king(b, 8, 8, a, hod) == 5); // proverka lozhnogo hoda
-    a[1] = 'c';
-    a[2] = '4';
-    a[3] = 'x';
-    a[4] = 'd';
-    a[5] = '4';
-    cout << "Test 6   -   Okey" << endl;
-    REQUIRE(king(b, 8, 8, a, hod) == 4); // proverka s'edaniya
 }
 TEST_CASE("Testing for Chess Queen ", "[Chess]")
 {
