@@ -31,7 +31,7 @@ test: bin/test.exe
 bin/test.exe: build/test.o build/board.a build/board_print_plain.o
 	g++ -Wall -Werror -Wextra -I src -I thirdparty -o $@ $^
 build/test.o: test/test.cpp
-	g++ -c -Wall -Werror -Wextra -I src -I thirdparty -o $@ $<
+	$(OBJ)
 
 -include board.d board_print_plain.d test.d
 
