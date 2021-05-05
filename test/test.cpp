@@ -246,6 +246,7 @@ TEST_CASE("Testing for Chess Bishop ", "[Chess]")
     a[5] = '4';
     cout << "Test 4   -   Okey" << endl;
     REQUIRE(bishop(b, 8, 8, a, hod) == 5); // proverka hoda po gorizontali
+}
 TEST_CASE("Testing for Chess Rook ", "[Chess]")
 {
     int hod = 2;
