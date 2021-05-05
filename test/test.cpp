@@ -7,7 +7,8 @@ using namespace std;
 
 TEST_CASE("Testing for Chess Pawn ", "[Chess]")
 {
-   
+    int hod = 2;
+
     char board[8][8];
     char a[6];
     char* b[8];
@@ -87,7 +88,6 @@ TEST_CASE("Testing for Chess Pawn ", "[Chess]")
     cout << "Test 10  -   Okey" << endl;
     REQUIRE(pawn(b, 8, 8, a) == 5); // proverka s'edaniya figuri
 }
-
 TEST_CASE("Testing for Chess Knight ", "[Chess]")
 {
     int hod = 2;
@@ -167,7 +167,6 @@ TEST_CASE("Testing for Chess Knight ", "[Chess]")
     cout << "Test 9   -   Okey" << endl;
     REQUIRE(kNight(b, 8, 8, a, hod) == 5); // lozhniy hod po vetikaly
 }
-
 TEST_CASE("Testing for Chess King ", "[Chess]")
 {
     int hod = 2;
@@ -222,7 +221,6 @@ TEST_CASE("Testing for Chess King ", "[Chess]")
     cout << "Test 6   -   Okey" << endl;
     REQUIRE(king(b, 8, 8, a, hod) == 4); // proverka s'edaniya
 }
-
 TEST_CASE("Testing for Chess Queen ", "[Chess]")
 {
     int hod = 2;
@@ -278,7 +276,6 @@ TEST_CASE("Testing for Chess Queen ", "[Chess]")
     cout << "Test 7   -   Okey" << endl;
     REQUIRE(queen(b, 8, 8, a, hod) == 4); // proverka s'edaniya
 }
-
 TEST_CASE("Testing for Chess Bishop ", "[Chess]")
 {
     int hod = 2;
@@ -326,7 +323,6 @@ TEST_CASE("Testing for Chess Bishop ", "[Chess]")
     cout << "Test 5   -   Okey" << endl;
     REQUIRE(bishop(b, 8, 8, a, hod) == 4); // proverka s'edaniya
 }
-
 TEST_CASE("Testing for Chess Rook ", "[Chess]")
 {
     int hod = 2;
@@ -358,14 +354,14 @@ TEST_CASE("Testing for Chess Rook ", "[Chess]")
     a[4] = 'g';
     a[5] = '4';
     cout << "Test 3   -   Okey" << endl;
-    REQUIRE(rook(b, 8, 8, a, hod) == 4); // proverka hoda cherez figuru
+    REQUIRE(rook(b, 8, 8, a, hod) == 5); // proverka hoda cherez figuru
     a[1] = 'c';
     a[2] = '4';
     a[3] = '-';
     a[4] = 'f';
     a[5] = '7';
     cout << "Test 4   -   Okey" << endl;
-    REQUIRE(rook(b, 8, 8, a, hod) == 4); // proverka hoda po diagonali
+    REQUIRE(rook(b, 8, 8, a, hod) == 5); // proverka hoda po diagonali
     a[1] = 'c';
     a[2] = '4';
     a[3] = 'x';
