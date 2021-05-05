@@ -12,7 +12,7 @@ TEST_CASE("Testing for Chess Pawn ", "[Chess]")
     char* b[8];
     for (int i = 0; i < 8; i++)
         b[i] = board[i];
-    BoardP(b, 8, 8);
+    Board(b, 8, 8);
     a[0] = 'p';
     a[1] = 'b';
     a[2] = '2';
@@ -94,7 +94,7 @@ TEST_CASE("Testing for Chess Knight ", "[Chess]")
     char* b[8];
     for (int i = 0; i < 8; i++)
         b[i] = board[i];
-    BoardN(b, 8, 8);
+    Board(b, 8, 8);
     a[0] = 'n';
     a[1] = 'b';
     a[2] = '1';
@@ -173,7 +173,7 @@ TEST_CASE("Testing for Chess King ", "[Chess]")
     char* b[8];
     for (int i = 0; i < 8; i++)
         b[i] = board[i];
-    BoardK(b, 8, 8);
+    Board(b, 8, 8);
     a[0] = 'k';
     a[1] = 'c';
     a[2] = '4';
@@ -229,7 +229,7 @@ TEST_CASE("Testing for Chess Queen ", "[Chess]")
         b[i] = board[i];
     cout << "Testing Queen -" << endl;
     cout << "Test 1   -   Okey" << endl << endl;
-    BoardQ(b, 8, 8);
+    Board(b, 8, 8);
     a[0] = 'q';
     a[1] = 'c';
     a[2] = '4';
@@ -282,7 +282,7 @@ TEST_CASE("Testing for Chess Bishop ", "[Chess]")
     char* b[8];
     for (int i = 0; i < 8; i++)
         b[i] = board[i];
-    BoardB(b, 8, 8);
+    Board(b, 8, 8);
     a[0] = 'b';
     a[1] = 'c';
     a[2] = '4';
@@ -329,7 +329,7 @@ TEST_CASE("Testing for Chess Rook ", "[Chess]")
     char* b[8];
     for (int i = 0; i < 8; i++)
         b[i] = board[i];
-    BoardR(b, 8, 8);
+    Board(b, 8, 8);
     a[0] = 'r';
     a[1] = 'c';
     a[2] = '4';
