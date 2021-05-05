@@ -270,3 +270,4 @@ TEST_CASE("Testing for Chess Rook ", "[Chess]")
     a[5] = '4';
     cout << "Test 3   -   Okey" << endl;
     REQUIRE(rook(b, 8, 8, a, hod) == 5); // proverka hoda cherez figuru
+}
