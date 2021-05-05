@@ -25,13 +25,6 @@ TEST_CASE("Testing for Chess Pawn ", "[Chess]")
     a[1] = 'b';
     a[2] = '2';
     a[3] = '-';
-    a[4] = 'b';
-    a[5] = '3';
-    cout << "Test 2   -   Okey" << endl;
-    REQUIRE(pawn(b, 8, 8, a) == 4); // hod na 1 kletku
-    a[1] = 'b';
-    a[2] = '2';
-    a[3] = '-';
     a[4] = 'a';
     a[5] = '3';
     cout << "Test 3   -   Okey" << endl;
@@ -104,13 +97,6 @@ TEST_CASE("Testing for Chess Knight ", "[Chess]")
     cout << "Testing kNight -" << endl;
     cout << "Test 1   -   Okey" << endl;
     REQUIRE(kNight(b, 8, 8, a, hod) == 4); // proverka hoda bukvoi �
-    a[1] = 'b';
-    a[2] = '1';
-    a[3] = '-';
-    a[4] = 'a';
-    a[5] = '3';
-    cout << "Test 2   -   Okey" << endl;
-    REQUIRE(kNight(b, 8, 8, a, hod) == 4); // proverka hoda bukvoi � v levo
     a[1] = 'e';
     a[2] = '1';
     a[3] = '-';
@@ -174,15 +160,6 @@ TEST_CASE("Testing for Chess King ", "[Chess]")
     for (int i = 0; i < 8; i++)
         b[i] = board[i];
     Board(b, 8, 8);
-    a[0] = 'k';
-    a[1] = 'c';
-    a[2] = '4';
-    a[3] = '-';
-    a[4] = 'c';
-    a[5] = '3';
-    cout << "Testing king -" << endl;
-    cout << "Test 1   -   Okey" << endl;
-    REQUIRE(king(b, 8, 8, a, hod) == 4); // proverka hoda vniz
     a[1] = 'c';
     a[2] = '4';
     a[3] = '-';
@@ -230,14 +207,6 @@ TEST_CASE("Testing for Chess Queen ", "[Chess]")
     cout << "Testing Queen -" << endl;
     cout << "Test 1   -   Okey" << endl << endl;
     Board(b, 8, 8);
-    a[0] = 'q';
-    a[1] = 'c';
-    a[2] = '4';
-    a[3] = '-';
-    a[4] = 'c';
-    a[5] = '1';
-    cout << "Test 2   -   Okey" << endl;
-    REQUIRE(queen(b, 8, 8, a, hod) == 4); // proverka hoda po vetikali
     a[1] = 'c';
     a[2] = '4';
     a[3] = '-';
@@ -295,13 +264,6 @@ TEST_CASE("Testing for Chess Bishop ", "[Chess]")
     a[1] = 'c';
     a[2] = '4';
     a[3] = '-';
-    a[4] = 'a';
-    a[5] = '6';
-    cout << "Test 2   -   Okey" << endl;
-    REQUIRE(bishop(b, 8, 8, a, hod) == 4); // proverka hoda po diagonali
-    a[1] = 'c';
-    a[2] = '4';
-    a[3] = '-';
     a[4] = 'c';
     a[5] = '1';
     cout << "Test 3   -   Okey" << endl;
@@ -330,15 +292,6 @@ TEST_CASE("Testing for Chess Rook ", "[Chess]")
     for (int i = 0; i < 8; i++)
         b[i] = board[i];
     Board(b, 8, 8);
-    a[0] = 'r';
-    a[1] = 'c';
-    a[2] = '4';
-    a[3] = '-';
-    a[4] = 'c';
-    a[5] = '1';
-    cout << "Testing Rook" << endl;
-    cout << "Test 1   -   Okey" << endl;
-    REQUIRE(rook(b, 8, 8, a, hod) == 4); // proverka hoda po vertikali
     a[1] = 'c';
     a[2] = '4';
     a[3] = '-';
