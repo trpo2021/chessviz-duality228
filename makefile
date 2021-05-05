@@ -1,4 +1,4 @@
-CFLAGS = -Wall -Werror 
+CFLAGS = -Wall -Werror -I thirdparty -I src
 OBJ = g++ $(CFLAGS) -c $< -o $@
 
 all:folder folder2 bin/chess.exe bin/test.exe
