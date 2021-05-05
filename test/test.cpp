@@ -83,23 +83,20 @@ TEST_CASE("Testing for Chess Knight ", "[Chess]")
     cout << "Testing kNight -" << endl;
     cout << "Test 1   -   Okey" << endl;
     REQUIRE(kNight(b, 8, 8, a, hod) == 4); // proverka hoda bukvoi �
-            == 4); // proverka hoda bukvoi � v pravo gorizontalno vverh
     a[1] = 'e';
     a[2] = '4';
     a[3] = '-';
     a[4] = 'g';
     a[5] = '3';
     cout << "Test 5   -   Okey" << endl;
-    REQUIRE(kNight(b, 8, 8, a, hod)
-            == 4); // proverka hoda bukvoi � v pravo gorizontalno vniz
+    REQUIRE(kNight(b, 8, 8, a, hod)== 4); // proverka hoda bukvoi � v pravo gorizontalno vniz
     a[1] = 'e';
     a[2] = '4';
     a[3] = '-';
     a[4] = 'c';
     a[5] = '3';
     cout << "Test 6   -   Okey" << endl;
-    REQUIRE(kNight(b, 8, 8, a, hod)
-            == 4); // proverka hoda bukvoi � v pravo gorizontalno vniz
+    REQUIRE(kNight(b, 8, 8, a, hod)== 4); // proverka hoda bukvoi � v pravo gorizontalno vniz
     a[1] = 'e';
     a[2] = '4';
     a[3] = '-';
