@@ -7,7 +7,7 @@ using namespace std;
 
 TEST_CASE("Testing for Chess Pawn ", "[Chess]")
 {
-    int hod = 2;
+    
 
     char board[8][8];
     char a[6];
