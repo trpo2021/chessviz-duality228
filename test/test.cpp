@@ -18,43 +18,36 @@ TEST_CASE("Testing for Chess Pawn ", "[Chess]")
     a[3] = '-';
     a[4] = 'b';
     a[5] = '4';
-    cout << " Testing Pawn" << endl;
-    cout << "Test 1   -   Okey" << endl;
     REQUIRE(pawn(b, 8, 8, a) == 4); // hod na 2 kletki iz nachala
     a[1] = 'b';
     a[2] = '2';
     a[3] = '-';
     a[4] = 'a';
     a[5] = '3';
-    cout << "Test 2   -   Okey" << endl;
     REQUIRE(pawn(b, 8, 8, a) == 5); // proverka hoda po diagonali
     a[1] = 'b';
     a[2] = '2';
     a[3] = '-';
     a[4] = 'a';
     a[5] = '3';
-    cout << "Test 3   -   Okey" << endl;
     REQUIRE(pawn(b, 8, 8, a) == 5); // proverka hoda po diagonali
     a[1] = 'b';
     a[2] = '2';
     a[3] = '-';
     a[4] = 'b';
     a[5] = '5';
-    cout << "Test 4  -   Okey" << endl;
     REQUIRE(pawn(b, 8, 8, a) == 5); // proverka hoda na 3 kletki
     a[1] = 'a';
     a[2] = '2';
     a[3] = '-';
     a[4] = 'a';
     a[5] = '1';
-    cout << "Test 5   -   Okey" << endl;
     REQUIRE(pawn(b, 8, 8, a) == 5); // proverka hoda nazad
     a[1] = 'd';
     a[2] = '2';
     a[3] = 'x';
     a[4] = 'd';
     a[5] = '3';
-    cout << "Test 6  -   Okey" << endl;
     REQUIRE(pawn(b, 8, 8, a) == 5); // proverka s'edaniya figuri
 }
 TEST_CASE("Testing for Chess Knight ", "[Chess]")
@@ -72,29 +65,24 @@ TEST_CASE("Testing for Chess Knight ", "[Chess]")
     a[3] = '-';
     a[4] = 'c';
     a[5] = '3';
-    cout << "Testing kNight -" << endl;
-    cout << "Test 1   -   Okey" << endl;
     REQUIRE(kNight(b, 8, 8, a, hod) == 4); // proverka hoda bukvoi �
     a[1] = 'e';
     a[2] = '4';
     a[3] = '-';
     a[4] = 'g';
     a[5] = '6';
-    cout << "Test 2   -   Okey" << endl;
     REQUIRE(kNight(b, 8, 8, a, hod) == 5); // lozhniy hod po diagonaly
     a[1] = 'e';
     a[2] = '4';
     a[3] = '-';
     a[4] = 'h';
     a[5] = '4';
-    cout << "Test 3   -   Okey" << endl;
     REQUIRE(kNight(b, 8, 8, a, hod) == 5); // lozhniy hod po gorizontaly
     a[1] = 'e';
     a[2] = '4';
     a[3] = '-';
     a[4] = 'e';
     a[5] = '7';
-    cout << "Test 4  -   Okey" << endl;
     REQUIRE(kNight(b, 8, 8, a, hod) == 5); // lozhniy hod po vetikaly
 }
 TEST_CASE("Testing for Chess King ", "[Chess]")
@@ -111,7 +99,6 @@ TEST_CASE("Testing for Chess King ", "[Chess]")
     a[3] = '-';
     a[4] = 'c';
     a[5] = '2';
-    cout << "Test 1   -   Okey" << endl;
     REQUIRE(king(b, 8, 8, a, hod) == 5); // proverka lozhnogo hoda
 }
 TEST_CASE("Testing for Chess Queen ", "[Chess]")
@@ -130,14 +117,12 @@ TEST_CASE("Testing for Chess Queen ", "[Chess]")
     a[3] = '-';
     a[4] = 'a';
     a[5] = '4';
-    cout << "Test 2   -   Okey" << endl;
     REQUIRE(queen(b, 8, 8, a, hod) == 4); // proverka hoda po gorizontali
     a[1] = 'c';
     a[2] = '4';
     a[3] = '-';
     a[4] = 'd';
     a[5] = '1';
-    cout << "Test 3   -   Okey" << endl;
     REQUIRE(queen(b, 8, 8, a, hod) == 5); // proverka lozhnogo hoda
 }
 TEST_CASE("Testing for Chess Bishop ", "[Chess]")
@@ -155,22 +140,18 @@ TEST_CASE("Testing for Chess Bishop ", "[Chess]")
     a[3] = '-';
     a[4] = 'f';
     a[5] = '7';
-    cout << "Testing Bishop" << endl;
-    cout << "Test 1   -   Okey" << endl;
     REQUIRE(bishop(b, 8, 8, a, hod) == 5); // proverka hoda  cherez figuru
     a[1] = 'c';
     a[2] = '4';
     a[3] = '-';
     a[4] = 'c';
     a[5] = '1';
-    cout << "Test 2   -   Okey" << endl;
     REQUIRE(bishop(b, 8, 8, a, hod) == 5); // proverka hoda po vertikali
     a[1] = 'c';
     a[2] = '4';
     a[3] = '-';
     a[4] = 'a';
     a[5] = '4';
-    cout << "Test 3   -   Okey" << endl;
     REQUIRE(bishop(b, 8, 8, a, hod) == 5); // proverka hoda po gorizontali
 }
 TEST_CASE("Testing for Chess Rook ", "[Chess]")
@@ -187,6 +168,5 @@ TEST_CASE("Testing for Chess Rook ", "[Chess]")
     a[3] = '-';
     a[4] = 'g';
     a[5] = '4';
-    cout << "Test 1   -   Okey" << endl;
     REQUIRE(rook(b, 8, 8, a, hod) == 5); // proverka hoda cherez figuru
 }
