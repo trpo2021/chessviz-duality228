@@ -1,5 +1,5 @@
 #define CATCH_CONFIG_MAIN
-#include "src/board.h"
+#include "board.h"
 #include "catch.hpp"
 #include <iostream>
 using namespace std;
